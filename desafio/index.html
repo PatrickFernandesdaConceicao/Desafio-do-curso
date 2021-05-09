@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br"> <!--define a linguagem do site-->
+<head> <!--cabeça do site geralmente abrigam tags que não aparecem para o usuário-->
+    <meta charset="UTF-8"> <!--permite a utilização de qualquer caractére de qualquer idioma como se fosse um padrão para toda web-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--o viewport basicamente avisa pro "nosso layout" o tamanho da tela que o usuário esta usando, que varia de acordo com o dispositivo que esta sendo usado-->
+    <title>Desafio</title> <!--nome do site(aquele aparece la na parte de cima da janela)-->
+
+    <!--Link para iniciar o Google Fonts-->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+
+	<!--fonte Fira Sans Condensed-->
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@300&display=swap" rel="stylesheet">	
+
+    <!--fonte Goblin One-->
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@300&family=Goblin+One&display=swap" rel="stylesheet">
+
+    <!--fonte Amatic-->
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+</head>
+<body> <!--corpo do site(onde aparecerá seu conteúdo)-->
+    <style> /*parte de estilização(CSS)*/
+
+        /*MAIN*/
+        .conteudoPrincipal{
+            margin: auto; /*define a margem/ o auto significa que a margem te todos os lados será calculada automaticamente e como todas terão o mesmo tamanho o conteúdo fica centralziado*/
+            width: 90%; /*define a largura/ como o numero ta 90% o conteudoPrincipal terá 90% de toda a pagina*/
+            background-color: rgb(70, 54, 54); /*define a cor de fundo*/
+        }
+        /*body*/
+        body{
+            background-color: #11319B;/*muda a cor de fundo*/
+        }
+
+        /*titulo*/
+
+        .titulo h1{ /*estiliza todos os h1 presentes na classe titulo*/
+            font-family: 'Fira Sans Condensed', sans-serif; /* usará a fonte fira sans condensed e se acaso o navegador não encontre a primeira fonte ele usará a que vier a seguir*/
+            font-size: 1.5em; /*modifica o tamanho da fonte para 1.5 vezes seu tamanho original*/
+            text-align: center; /*centralizará o texto*/
+            color: #E57000; /*define a cor da fonte*/
+        }  
+        /*Lista Ordenada*/  
+
+        .listaOrdenada ol{
+            list-style-type: none; /*muda o estilo de marcação dos LIs*/
+        }
+        .listaOrdenada li{ /*estiliza todos os li presentes na classe listaOrdenada*/
+            font-family: 'Goblin One', cursive; /*usará a fonte Goblin ONE e se acaso o navegador não encontre a primeira fonte ele usará a que vier a seguir*/
+            color: #51FFFF; /*muda a cor da fonte*/
+            font-size: 13px; /*muda o tamanho da fonte*/
+        }
+
+        /*Lista Desordenada*/
+        .tituloUl{
+            font-family: 'Fira Sans Condensed', sans-serif; /*Professor a fonte não está goblin one, pois aqui esta estilizando só o titulo é não à lista em si*/
+            text-align: center; /*muda o alinhamento do texto*/
+            color: #E57000; /*muda a cor da fonte*/
+            font-size: 25px; /*muda o tamanho da fonte*/
+        }
+        .listaDesordenada ul{
+            list-style-type: none; /*muda o estilo de marcação dos LIs*/
+        }
+        .listaDesordenada li{
+            font-family: 'Amatic SC', cursive; /*usará a fonte Amatic SC e se acaso o navegador não encontre a primeira fonte ele usará a que vier a seguir*/
+            color: #ACDB00; /*muda a cor da fonte*/
+        }
+
+        /*Imagem Cachorro*/
+        .imagemCachorro{
+            text-align: center;
+        }
+        .imagemCachorro h2{
+            font-size: 35px;/*muda o tamanho da fonte*/
+        }
+        .imagemCachorro img{
+            width: 50%; /*define a largura*/
+        }
+
+        /*imagem Gato*/
+
+        .imagemGato{
+            text-align: center;
+        }
+        .imagemGato h2{
+            font-size: 35px;
+            color: yellow;
+        }
+        .imagemGato em{
+            font-style: normal; /*para retirar a forma italica automaticamente imposta a tag EM*/
+            color: white;
+        }
+        .imagemGato img{
+            width: 25%;
+        }
+
+        /*Imagens ul*/
+
+        .imagens{
+            text-align: center;
+        }
+        .imagens h2{
+            font-size: 35px;
+        }
+        .imagens img{
+            width: 25%;
+        }
+    </style>
+
+    <main class="conteudoPrincipal"> <!--Envolve o conteúdo principal do site-->
+
+        <!--titulo-->
+
+        <div class="titulo">
+            <h1>Quais são as linguagens de programação mais utilizadas no mercado?</h1>
+        </div>
+    
+        <!--Lista Ordenada-->
+    
+        <div class="listaOrdenada"> 
+            <ol> <!--cria uma lista ordenada, podendo ser ordenada por numeros e letras-->
+                <li> <!--define as linhas das listas-->
+                    <h2>Python</h2> <!--h2 é um subtitulo de h1-->
+                    <p>Uma das mais simples de se aprender, Python continua sendo uma das linguagens mais populares do mercado, mesmo que tenha sido lançada há quase 30 anos. É um dos códigos de mais fácil leitura e bastante utilizado para desenvolvimento web e machine learning.</p> <!--linha de parágrafo-->
+                </li> 
+                <li> <!--define as linhas das listas-->
+                    <h2>Swift</h2> <!--h2 é um subtitulo de h1-->
+                    <p>É a linguagem utilizada em aparelhos da Apple e iOS. Logo, devido ao encantamento Apple de tantos adeptos, ela se destaca. Diversas empresas a utilizam em suas bases de criação, criando ou modificando seus projetos e aprendendo as vantagens oferecidas por esta linguagem.</p>
+                </li> 
+                <li> <!--define as linhas das listas-->
+                    <h2>PHP</h2> <!--h2 é um subtitulo de h1-->
+                    <p>Usado majoritariamente em páginas na web, a linguagem PHP é muito útil para incluir funções a uma página, algo que o HTML não seria capaz de suportar. Ela também integra informações da página a um banco de dados MySQL.</p>
+                </li> 
+                <li> <!--define as linhas das listas-->
+                    <h2>JavaScript</h2> <!--h2 é um subtitulo de h1-->
+                    <p>Foi originalmente implementada como parte dos navegadores web para que scripts pudessem ser executados do lado do cliente e pudessem interagir com o usuário, sem a necessidade de passar pelo servidor, controlando o navegador, realizando a comunicação assíncrona e alterando o conteúdo do documento exibido, enfim, descomplicando o processo. O JavaScript, que não é Java, ainda é o preferido das aplicações web e tem ganhado espaço no desktop/mobile, pois cria interatividade e é simples de ser aplicado.</p>
+                </li> 
+                <li> <!--define as linhas das listas-->
+                    <h2>Java</h2> <!--h2 é um subtitulo de h1-->
+                    <p>É a linguagem de programação mais utilizada no planeta. Ela pode ser usada em diversos aparelhos e leva o título de principal linguagem para a criação de aplicativos na produção Android. Além disso, em Java, é possível adaptar um programa a uma rápida escalabilidade de usuários, assim como a uma retrocompatibilidade, já que o código da versão antiga continua sendo reconhecido nas versões atuais.</p>
+                </li> 
+            </ol>
+        </div>
+    
+        <!--Lista Desordenada-->
+    
+        <div class="tituloUl">
+            <h1>Quais são os animais mais fofos que existem?</h1>
+        </div>
+
+        <div class="listaDesordenada">
+            <ul> <!--marcada com pontos-->
+                <li>
+
+                    <div class="imagemCachorro">
+                        <h2>Cachorro</h2>
+                        <img src="imagens/cachorro.png" alt="foto de um cachorro"> <!--src(fonte do arquivo) alt(como uma forma de maior acessibilidade o alt é o texto que aparecerá caso a imagem não seja carregada)-->
+                    </div>
+
+                </li>
+                <li>
+
+                    <div class="imagemGato">
+                        <h2>Ga<em>to</em></h2> <!--professor aqui eu fiquei em dúvida de colocar o strong ou EM(enfâse) eu optei pelo EM pois eu acredito que o senhor só quisesse mudar o estilo e não definir ela com uma importância semantica-->
+                        <img src="imagens/gato.png" alt="foto de um gato"> 
+                    </div>
+
+                </li>
+                <li>
+
+                    <div class="imagens">
+                        <h2>Doninha de patas pretas</h2> 
+                        <img src="imagens/furões.jpg" alt="foto de furões"> 
+                    </div>
+
+                </li>
+                <li>
+
+                    <div class="imagens">
+                        <h2>Canguru Bennett arborícola</h2> 
+                        <img src="imagens/canguru.jpg" alt="foto de cangurus"> 
+                    </div>
+
+                </li>
+                <li>
+
+                    <div class="imagens">
+                        <h2>Esquilo vermelho</h2> 
+                        <img src="imagens/Esquilo-vermelho.jpg" alt="foto de um esquilo vermelho"> 
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+    </main>
+</body>
+</html>
